@@ -1,11 +1,9 @@
 # Experiment 05 Implementation of flipflops using verilog
 
 ## AIM:
-
 To implement all the flipflops using verilog and validating their functionality using their functional tables.
 
 ## HARDWARE REQUIRED: 
-
     1.PC
     2.Cyclone II 
     3.USB flasher
@@ -16,7 +14,6 @@ To implement all the flipflops using verilog and validating their functionality 
 ## THEORY:
 
 ## SR FLIP-FLOP:
-
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167910294-bb550548-b1dc-4cba-9044-31d9037d476b.png)
@@ -43,9 +40,7 @@ By using three variable K-Map, we can get the simplified expression for next sta
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is
 Q(t+1)=S+R′Q(t)Q(t+1)=S+R′Q(t)
 
-
 ## D FLIP-FLOP:
-
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
  
 This circuit has single input D and two outputs Qtt & Qtt’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
@@ -65,9 +60,7 @@ Qt+1t+1 = D
 
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
-
 ## JK FLIP-FLOP:
-
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
 ![image](https://user-images.githubusercontent.com/36288975/167910378-d2d984a7-2815-4d17-8c41-ee4bdf59ec24.png) 
 
@@ -92,10 +85,7 @@ By using three variable K-Map, we can get the simplified expression for next sta
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is
 Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
-
-
 ## T FILP-FLOP:
-
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167911534-5f3c445d-bc68-46e2-9a9c-7efce5febc60.png)
@@ -120,15 +110,18 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ## PROCEDURE:
 
 1.Use module projname(input,output) to start the Verilog programmming.
+
 2.Assign inputs and outputs using the word input and output respectively.
+
 3.Use defined keywords like wire,assign and required logic gates to represent the FlipFlops.
+
 4.End the verilog program using keyword endmodule.
+
 5.Get the timing diagram and RTL realization diagram for respective flipflops.
 
 ## PROGRAM :
 
 ## SR FLIP-FLOP:
-
 ## PROGRAM FOR SR FLIP-FLOP:
 
 /*
@@ -147,15 +140,12 @@ endmodule
 */
 
 ## RTL LOGIC FOR SR FLIP-FLOP:
-
 ![output](sr.png)
 
 ## TIMING DIGRAM FOR SR FLIP-FLOP:
-
 ![output](srtd.png)
 
 ## D FLIP FLOP:
-
 ## PROGRAM FOR D FLIP-FLOP:
 
 /*
@@ -175,16 +165,13 @@ nand(Qbar,Y,Q);
 endmodule
 */
 
-# RTL LOGIC FOR D FLIP-FLOP:
-
+## RTL LOGIC FOR D FLIP-FLOP:
 ![output](d.png)
 
-# TIMING DIAGRAM FOR D FLIP-FLOP:
-
+## TIMING DIAGRAM FOR D FLIP-FLOP:
 ![output](dtd.png)
 
-# JK FLIP-FLOP:
-
+## JK FLIP-FLOP:
 ## PROGRAM FOR JK FLIP-FLOP:
 
 /*
@@ -203,16 +190,13 @@ nand(Qbar,S,Q);
 endmodule
 */
 
-# RTL LOGIC FOR JK FLIP-FLOP:
-
+## RTL LOGIC FOR JK FLIP-FLOP:
 ![output](jk.png)
 
-# TIMING DIAGRAM FOR JK FLIP-FLOP:
-
+## TIMING DIAGRAM FOR JK FLIP-FLOP:
 ![output](jktd.png)
 
-# T FLIP-FLOP:
-
+## T FLIP-FLOP:
 ## PROGRAM FOR T FLIP-FLOP:
 
 /*
@@ -231,14 +215,11 @@ nand(Qbar,R,Q);
 endmodule
 */
 
-# RTL LOGIC FOR T FLIP-FLOP:
-
+## RTL LOGIC FOR T FLIP-FLOP:
 ![output](t.png)
 
 ## TIMING DIAGRAM FOR T FLIP-FLOP:
-
 ![output](ttd.png)
 
-### RESULTS:
-
+## RESULTS:
 Hence all the flipflops are implemented using verilog programming and its functionality is validated successfully.
