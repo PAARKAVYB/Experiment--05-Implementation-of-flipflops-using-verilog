@@ -123,7 +123,7 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 ## SR FLIP-FLOP:
 ## PROGRAM FOR SR FLIP-FLOP:
-
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Paarkavy B
@@ -138,6 +138,7 @@ nand(Q,X,Qbar);
 nand(Qbar,Y,Q);
 endmodule
 */
+```
 
 ## RTL LOGIC FOR SR FLIP-FLOP:
 ![output](sr.png)
@@ -147,7 +148,7 @@ endmodule
 
 ## D FLIP FLOP:
 ## PROGRAM FOR D FLIP-FLOP:
-
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Paarkavy B
@@ -164,6 +165,7 @@ nand(Q,X,Qbar);
 nand(Qbar,Y,Q);
 endmodule
 */
+```
 
 ## RTL LOGIC FOR D FLIP-FLOP:
 ![output](d.png)
@@ -173,7 +175,7 @@ endmodule
 
 ## JK FLIP-FLOP:
 ## PROGRAM FOR JK FLIP-FLOP:
-
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Paarkavy B
@@ -189,6 +191,7 @@ nand(Q,P,Qbar);
 nand(Qbar,S,Q);
 endmodule
 */
+```
 
 ## RTL LOGIC FOR JK FLIP-FLOP:
 ![output](jk.png)
@@ -198,7 +201,7 @@ endmodule
 
 ## T FLIP-FLOP:
 ## PROGRAM FOR T FLIP-FLOP:
-
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Paarkavy B
@@ -214,6 +217,7 @@ nand(Q,S,Qbar);
 nand(Qbar,R,Q);
 endmodule
 */
+```
 
 ## RTL LOGIC FOR T FLIP-FLOP:
 ![output](t.png)
